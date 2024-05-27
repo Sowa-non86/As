@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecomerse website </title>
+</head>
+<body>
+    <div id="title">
+        <h3> Ecommerce buisness </h3>
+    </div>
+    <br>
+    <div>
+    <form id="login page" onsubmit="submitfunction()" method="get">
+        <label> Login :</label>
+        <br>
+        <label>User name </label>
+        <input type="text" name="user_name" id ="uname">
+        <br>
+        <label>pass </label>
+        <input type="text" name="pass" id ="pass">
+        <br>
+        <button type="submit">login</button>
+    </form>
+    </div>
+    <script>
+        function submitfunction(){
+            var user_name = document.getElementById("uname").value;
+            var pass = document.getElementById("pass").value;
+            if (user_name === "" || pass === ""){
+                alert("invalid input credentials");
+                return false 
+            }
+            alert(" user validated ")
+            return true;
+        }
+    </script>
+</body>
+</html>
